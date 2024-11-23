@@ -46,7 +46,7 @@ export const project = [
         img3: img2_3,
         serverSite: "https://github.com/developerAshish08/Sumz",
         ClientSite: "https://github.com/developerAshish08/Sumz",
-        liveSite: "https://github.com/developerAshish08/Sumz",
+        liveSite: "https://summary-extractor.netlify.app/",
         description: "Sumz is your go-to solution for effortlessly transforming lengthy articles into concise and clear summaries.",
     },
     {
