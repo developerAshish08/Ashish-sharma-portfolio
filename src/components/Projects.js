@@ -60,6 +60,7 @@ export const project = [
         aboutProject4: "Integrated with backend services using Axios for efficient data handling.",
         aboutProject5: "Created interactive pop-ups for deleting and editing details in the CRM system.",
         aboutProject6: "Provided role-based access control through Context API for secure CRM system usage.",
+        aboutProject7:"Automated the LSQ Process through Job Schedular to save the company cost.",
         fullImg: img3,
         img1: img3_1,
         img2: img3_2,

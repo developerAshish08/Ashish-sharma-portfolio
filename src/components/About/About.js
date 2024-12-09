@@ -53,8 +53,7 @@ const About = () => {
                     <div className="row">
                         <div className="col-md-12 col-sm-12">
                             <p className='pe-5 mt-4 mb-5'>
-                            Recent NSIT Delhi graduate (2023) with a strong foundation in software engineering and a year of MERN stack experience, eager to bring innovative web development skills to a forward-thinking team
-                            </p>
+                            Recent NSIT Delhi graduate (2023) with 1.5 year of experience in React, Node.js, ,MongoDB and Express as an Associate Software Engineer at RoboMQ. Currently at Academically, I specialize in full-stack development and have honed my skills in JavaScript, HTML, CSS, Git, and RabbitMQ. With a passion for crafting efficient solutions, I’m seeking opportunities to contribute to innovative projects, grow my expertise, and make a meaningful impact in the software development field.</p>
                             <a className='button1' href="https://wa.me/917027274782">Let't Talk</a>
                         </div>
                     </div>

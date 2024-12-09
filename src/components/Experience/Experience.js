@@ -107,13 +107,6 @@ const Experience = () => {
                                 <article className='d-flex justify-content-between align-items-center'>
                                     <i style={{ color: '#4FB4F2' }} class="fa-solid fa-certificate me-2 ms-3"></i>
                                     <div>
-                                        <h6>Spring</h6>
-                                        <p className="text-secondary fw-light">Begainner</p>
-                                    </div>
-                                </article>
-                                <article className='d-flex justify-content-between align-items-center'>
-                                    <i style={{ color: '#4FB4F2' }} class="fa-solid fa-certificate me-2 ms-3"></i>
-                                    <div>
                                         <h6>MySQL</h6>
                                         <p className="text-secondary fw-light">Experienced</p>
                                     </div>

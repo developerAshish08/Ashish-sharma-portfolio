@@ -1,14 +1,34 @@
-import React from 'react';
-import { useRef } from 'react';
-import emailjs from 'emailjs-com'
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
 import './Contact.css';
 
 const Contact = () => {
     const form = useRef();
-    const sendEmail = (e) => {  
+
+    const sendEmail = (e) => {
         e.preventDefault();
-        emailjs.sendForm('service_cac4nuf', 'template_ql04u2i', form.current, 'o3-uA0uz7P_V85DvY')
+
+        emailjs
+            .sendForm(
+                'service_widpywi', // Your EmailJS service ID
+                'template_u0ei6ct', // Your EmailJS template ID
+                form.current,
+                '7XDNsM6Nz-ks9pzAi' // Your EmailJS public key
+            )
+            .then(
+                (result) => {
+                    console.log('Email sent:', result.text);
+                    alert('Message sent successfully!');
+                },
+                (error) => {
+                    console.error('Error:', error.text);
+                    alert('Failed to send message, please try again.');
+                }
+            );
+
+        e.target.reset(); // Clear the form after sending the email
     };
+
     return (
         <div id='contact' className='container mb-5'>
             <div className="text-center mt-5 mb-5">
@@ -17,7 +37,7 @@ const Contact = () => {
             </div>
             <div className="row text-center">
                 <div className="col-md-6">
-                    <div className='d-flex flex-column justify-content-center align-items-center '>
+                    <div className='d-flex flex-column justify-content-center align-items-center'>
                         <div className="card card-background mb-3" style={{ width: '18rem' }}>
                             <div className="card-body">
                                 <i className="fa-solid fa-envelope"></i>
@@ -47,22 +67,22 @@ const Contact = () => {
                 <div className="col-md-6 text-start">
                     <form ref={form} onSubmit={sendEmail} className='all-inputs'>
                         <div className="mb-3">
-                            <label for="exampleFormControlInput1" className="form-label">Your Name</label>
-                            <input type="text" name='name' className="form-control from-design" id="exampleFormControlInput1" placeholder="Mr.X" />
+                            <label htmlFor="exampleFormControlInput1" className="form-label">Your Name</label>
+                            <input type="text" name='name' className="form-control from-design" id="exampleFormControlInput1" placeholder="Mr.X" required />
                         </div>
                         <div className="mb-3">
-                            <label for="exampleFormControlInput1" className="form-label">Your Email</label>
-                            <input type="email" name='email' className="form-control from-design" id="exampleFormControlInput2" placeholder="name@example.com" />
+                            <label htmlFor="exampleFormControlInput2" className="form-label">Your Email</label>
+                            <input type="email" name='email' className="form-control from-design" id="exampleFormControlInput2" placeholder="name@example.com" required />
                         </div>
                         <div className="mb-3">
-                            <label for="exampleFormControlTextarea1" className="form-label">Your Message</label>
-                            <textarea className="form-control from-design" name='message' id="exampleFormControlTextarea3" rows="8" placeholder="Your Message"></textarea>
+                            <label htmlFor="exampleFormControlTextarea3" className="form-label">Your Message</label>
+                            <textarea className="form-control from-design" name='message' id="exampleFormControlTextarea3" rows="8" placeholder="Your Message" required></textarea>
                         </div>
-                        <button className='button2'>Send Message</button>
+                        <button type="submit" className='button2'>Send Message</button>
                     </form>
                 </div>
             </div>
-        </div >
+        </div>
     );
 };
 

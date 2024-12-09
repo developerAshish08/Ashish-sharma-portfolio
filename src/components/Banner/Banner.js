@@ -9,7 +9,8 @@ const Banner = () => {
                 <p className='text-secondary mt-3'>Hello, I'm</p>
                 <h1>Ashish Sharma</h1>
                 <p className='mb-4'>Full Stack Developer</p>
-                <a className='button1 me-2' href="https://drive.google.com/file/d/1vwzCdZANEa84oPfOy3-OKo0Fr9__rxXG/view?usp=sharing" target="_blank" rel="noreferrer">Download CV</a>
+                
+                <a className='button1 me-2' href="https://drive.google.com/file/d/1rx9OU70EAl4DdkXOd-8wmKzBoS69AFk-/view?usp=sharing" target="_blank" rel="noreferrer">Download CV</a>
                 <a className='button2' href="https://wa.me/917027274782" target="_blank" rel="noreferrer">Let's Talk</a>
             </div>
             <div>
